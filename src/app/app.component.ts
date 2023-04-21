@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'simple-profile-app';
+  count = 0;
+
+  onClick(v: number): void {
+    this.count += v;
+  }
 }
